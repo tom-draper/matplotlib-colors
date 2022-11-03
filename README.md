@@ -41,7 +41,7 @@ plt.colorbar()
 plt.show()
 ```
 
-The full list of colormaps is available through the `color_names` list.
+The full list of colormaps can be found by `color_names` list.
 
 ```py
 from matplotlib_colors import colormap_names
@@ -64,7 +64,7 @@ plt.colorbar()
 plt.show()
 ```
 
-The full list of color names is available through the `color_names` list.
+The full list of color names can be found by importing the `color_names` list.
 
 ```py
 from matplotlib_colors import color_names
