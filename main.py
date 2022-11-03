@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from colors import colors
-from colormaps import colormaps
+from colormaps import register_cmaps
+
+register_cmaps()
 
 
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
