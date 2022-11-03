@@ -10,13 +10,17 @@ team = mcolors.ListedColormap([colors['OPPOSITION'], colors['CONTESTED'], colors
 analyst = mcolors.ListedColormap([colors['OPPOSITION'], colors['CONTESTED'], colors['TEAM']])
 
 
-excluded_vars = {'colormaps', 'colors', 'plt', 'mcolors', 'excluded_vars', 'var', 'register_cmaps'}
-colormaps = {var: eval(var) for var in dir() if not var.startswith('__') and var not in excluded_vars}
+excluded_vars = {'colormaps', 'colors', 'plt', 'mcolors', 'excluded_vars', 'var', 'cmap', 'register_cmaps'}
+
+colormaps = {}
+for var in dir():
+    if not var.startswith('__') and var not in excluded_vars:
+        cmap = eval(var)
+        cmap.name = var  # Assign variable name as colormap name
+        colormaps[var] = cmap
 colormap_names = list(colormaps.keys())
 
 def register_cmaps():
     for var, val in globals().items():
         if not var.startswith('__') and var not in excluded_vars:
-            val.name = var
             plt.colormaps.register(val)
-    print(plt.colormaps)

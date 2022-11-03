@@ -4,7 +4,7 @@ long_description = open("README.md").read()
 
 setup(
     name="matplotlib-colors",
-    version="1.0.7",
+    version="1.0.9",
     author="Tom Draper",
     author_email="tomjdraper1@gmail.com",
     license="MIT",
@@ -14,7 +14,6 @@ setup(
     url="https://github.com/tom-draper/matplotlib-colors",
     key_words="visualization color colormap colorset matplotlib",
     install_requires=['matplotlib'],
-    # py_modules=['matplotlib_colors'],
     packages=["matplotlib_colors"],
     python_requires=">=3.6",
 )
