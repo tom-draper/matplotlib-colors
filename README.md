@@ -51,7 +51,6 @@ The full list of colormaps can be found by `color_names` list.
 
 ```py
 from matplotlib_colors import colormap_names
-print(colormap_names)
 ```
 
 ### Colors
@@ -74,6 +73,5 @@ The full list of color names can be found by importing the `color_names` list.
 
 ```py
 from matplotlib_colors import color_names
-print(color_names)
 ```
 
