@@ -26,6 +26,21 @@ plt.colorbar()
 plt.show()
 ```
 
+Alternatively, colormap objects can be accessed by importing `colormaps` and specifying a colormap by name.
+
+```py
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib_colors import colormaps
+
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+y = [x * x for x in x]
+c = np.linspace(0, 100, 12)  # Where each point lands on the colour scale
+plt.scatter(x, y, c=c, cmap=colormaps['analyst'])  # Specify a new color name from matplotlib_colors
+plt.colorbar()
+plt.show()
+```
+
 The full list of colormaps is available through the `color_names` list.
 
 ```py
@@ -33,10 +48,9 @@ from matplotlib_colors import colormap_names
 print(colormap_names)
 ```
 
-
 ### Colors
 
-The package brings a range of colors that can be accessed by importing `colors` and specifying a color name.
+The package includes a large selection of colors that can be accessed by importing `colors` and specifying a color name.
 
 ```py
 import matplotlib.pyplot as plt
