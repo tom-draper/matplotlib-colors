@@ -4,3 +4,4 @@ dist
 matplotlib_colors.egg-info
 scripts/*
 !scripts/demo.py
+!scripts/gen_readme.py
