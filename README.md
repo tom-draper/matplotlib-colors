@@ -2,8 +2,9 @@
 
 A collection of curated colors and colormaps for matplotlib.
 
-![final](https://user-images.githubusercontent.com/41476809/199849510-071eea79-ff5e-4324-b7f0-5ae8d502aa01.jpg)
-
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/41476809/199849510-071eea79-ff5e-4324-b7f0-5ae8d502aa01.jpg">
+</p>
 
 ## Installation
 
