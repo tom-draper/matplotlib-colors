@@ -1,6 +1,6 @@
-from colors import colors
-import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
+from matplotlib_colors.colors.colors import colors
+import matplotlib.colors as mcolors
 
 
 # Colors maps
@@ -12,10 +12,11 @@ analyst = mcolors.ListedColormap([colors['OPPOSITION'], colors['CONTESTED'], col
 
 excluded_vars = {'colormaps', 'colors', 'plt', 'mcolors', 'excluded_vars', 'var', 'register_cmaps'}
 colormaps = {var: eval(var) for var in dir() if not var.startswith('__') and var not in excluded_vars}
+colormap_names = list(colormaps.keys())
 
 def register_cmaps():
     for var, val in globals().items():
         if not var.startswith('__') and var not in excluded_vars:
             val.name = var
-            print(var, val)
             plt.colormaps.register(val)
+    print(plt.colormaps)

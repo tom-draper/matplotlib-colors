@@ -23,3 +23,5 @@ ANALYST_PURPLE = [29, 10, 48]
 colors = {var: list(map(lambda x: x/255, eval(var))) 
           for var in dir() 
           if not var.startswith('__')}
+
+color_names = list(colors.keys())
