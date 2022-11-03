@@ -17,7 +17,7 @@ All new color maps can be added to matplotlib simply by calling the `register_cm
 ```py
 from matplotlib_colors import register_cmaps
 
-register_cmaps()  # Adds new colourmaps to matplotlib
+register_cmaps()  # Extends matplotlib with new colormaps
 
 
 # Build your data viz as normal with matplotlib...
