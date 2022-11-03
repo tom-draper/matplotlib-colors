@@ -26,7 +26,7 @@ plt.colorbar()
 plt.show()
 ```
 
-Alternatively, colormap objects can be accessed by importing `colormaps` and specifying a colormap by name.
+Alternatively, new colormap objects can be accessed directly by importing `colormaps` and specifying a colormap by name.
 
 ```py
 import numpy as np
@@ -50,7 +50,7 @@ print(colormap_names)
 
 ### Colors
 
-The package includes a large selection of colors that can be accessed by importing `colors` and specifying a color name.
+The package includes a large selection of colors that can be accessed directly by importing `colors` and specifying a color name.
 
 ```py
 import matplotlib.pyplot as plt
