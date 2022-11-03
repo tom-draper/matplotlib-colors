@@ -1,20 +1,20 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 long_description = open("README.md").read()
-required = ['matplotlib']
 
 setup(
     name="matplotlib-colors",
-    version="1.0.0", # eg:1.0.0
+    version="1.0.7",
     author="Tom Draper",
     author_email="tomjdraper1@gmail.com",
-    license="MIT License",
+    license="MIT",
     description="A collection of curated colors and colormaps for matplotlib.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/tom-draper/matplotlib-colors",
-    key_words="color style matplotlib colormap",
-    install_requires=required,
-    packages=find_packages(where="src"),
+    key_words="visualization color colormap colorset matplotlib",
+    install_requires=['matplotlib'],
+    # py_modules=['matplotlib_colors'],
+    packages=["matplotlib_colors"],
     python_requires=">=3.6",
 )

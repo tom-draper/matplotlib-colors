@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-from src.colors import colors
 import matplotlib.colors as mcolors
+from matplotlib_colors.colors import colors
 
 
 # Colors maps

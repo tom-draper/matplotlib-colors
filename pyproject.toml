@@ -1,29 +1,29 @@
 [build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
-]
 build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools>=42",
+  "wheel",
+]
 
 [project]
-name = "matplotlib-colors"
-version = "1.0.0"
-description = "A collection of curated color profiles for matplotlib."
-readme = "README.md"
-authors = [{ name = "Tom Draper", email = "tomjdraper1@gmail.com" }]
-license = { file = "LICENSE" }
+authors = [{name = "Tom Draper", email = "tomjdraper1@gmail.com"}]
 classifiers = [
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
 ]
-keywords = ["colors", "colormaps"]
-dependencies = ["matplotlib", 'tomli; python_version < "3.11"']
+dependencies = ["matplotlib"]
+description = "A collection of curated color profiles for matplotlib."
+keywords = ["visualization", "color", "colormap", "colorset", "matplotlib"]
+license = {file = "LICENSE"}
+name = "matplotlib-colors"
+readme = "README.md"
 requires-python = ">=3.7"
+version = "1.0.7"
 
-    [project.optional-dependencies]
-    build = ["build", "twine"]
-    dev   = ["pytest"]
+[project.optional-dependencies]
+build = ["build", "twine"]
+dev = ["pytest"]
 
-    [project.urls]
-    repository    = "https://github.com/tom-draper/matplotlib-colors"
+[project.urls]
+repository = "https://github.com/tom-draper/matplotlib-colors"
