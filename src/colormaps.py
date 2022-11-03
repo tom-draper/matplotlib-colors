@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from matplotlib_colors.colors.colors import colors
+from src.colors import colors
 import matplotlib.colors as mcolors
 
 

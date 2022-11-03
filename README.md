@@ -2,6 +2,12 @@
 
 A collection of curated colors and colormaps for matplotlib.
 
+## Installation
+
+```bash
+py -m pip install matplotlib-colors
+```
+
 ## Examples
 
 ### Colormaps

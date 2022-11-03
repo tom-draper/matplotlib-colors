@@ -1,0 +1,29 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matplotlib-colors"
+version = "1.0.0"
+description = "A collection of curated color profiles for matplotlib."
+readme = "README.md"
+authors = [{ name = "Tom Draper", email = "tomjdraper1@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["colors", "colormaps"]
+dependencies = ["matplotlib", 'tomli; python_version < "3.11"']
+requires-python = ">=3.7"
+
+    [project.optional-dependencies]
+    build = ["build", "twine"]
+    dev   = ["pytest"]
+
+    [project.urls]
+    repository    = "https://github.com/tom-draper/matplotlib-colors"
