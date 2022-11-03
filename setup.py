@@ -4,7 +4,7 @@ long_description = open("README.md").read()
 
 setup(
     name="matplotlib-colors",
-    version="1.0.9",
+    version="1.0.14",
     author="Tom Draper",
     author_email="tomjdraper1@gmail.com",
     license="MIT",

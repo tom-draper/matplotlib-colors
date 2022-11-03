@@ -2,3 +2,5 @@ __pycache__
 tempCodeRunnerFile.py
 dist
 matplotlib_colors.egg-info
+scripts/*
+!scripts/demo.py
