@@ -5,19 +5,19 @@ A collection of curated colors and colormaps for matplotlib.
 ## Installation
 
 ```bash
-py -m pip install matplotlib-colors
+pip install matplotlib-colors
 ```
 
 ## Examples
 
 ### Colormaps
 
-All new color maps can be added to matplotlib simply by calling the `register_cmaps` function. The desired colormap can be specified by name with the cmap argument.
+New colormaps can be added to matplotlib by calling the `register_cmaps` function. Then the desired colormap can be specified by name as the `cmap` argument.
 
 ```py
 from matplotlib_colors import register_cmaps
 
-register_cmaps()  # Adds new colourmaps to matplotlib
+register_cmaps()  # Adds new colormaps to matplotlib
 
 
 # Build your data viz as normal with matplotlib...
@@ -26,8 +26,7 @@ import matplotlib.pyplot as plt
 
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 y = [x * x for x in x]
-c = np.linspace(0, 100, 12)  # Where each point lands on the colour scale
-plt.scatter(x, y, c=c, cmap='analyst')  # Specify a new color name from matplotlib_colors
+plt.scatter(x, y, c=range(12), cmap='analyst')  # Specify a new color name from matplotlib_colors
 plt.colorbar()
 plt.show()
 ```
@@ -41,8 +40,7 @@ from matplotlib_colors import colormaps
 
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 y = [x * x for x in x]
-c = np.linspace(0, 100, 12)  # Where each point lands on the colour scale
-plt.scatter(x, y, c=c, cmap=colormaps['analyst'])  # Specify a new color name from matplotlib_colors
+plt.scatter(x, y, c=range(12), cmap=colormaps['analyst'])  # Specify a colormap from colormaps dict
 plt.colorbar()
 plt.show()
 ```
@@ -51,7 +49,6 @@ The full list of colormaps can be found by `color_names` list.
 
 ```py
 from matplotlib_colors import colormap_names
-print(colormap_names)
 ```
 
 ### Colors
@@ -65,7 +62,7 @@ from matplotlib_colors import colors
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 y = [x * x for x in x]
 
-plt.scatter(x, y, c=colors['PL_RED'])
+plt.scatter(x, y, c=colors['PL_RED'])  # All points colored with PL_RED
 plt.colorbar()
 plt.show()
 ```
@@ -74,6 +71,5 @@ The full list of color names can be found by importing the `color_names` list.
 
 ```py
 from matplotlib_colors import color_names
-print(color_names)
 ```
 
