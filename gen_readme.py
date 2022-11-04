@@ -13,7 +13,7 @@ def title():
     return """# Showcase"""
 
 def plot_colortable(path, sort_colors=True, emptycols=0):
-    cell_width = 212
+    cell_width = 250
     cell_height = 22
     swatch_width = 48
     margin = 12
@@ -50,7 +50,7 @@ def plot_colortable(path, sort_colors=True, emptycols=0):
         swatch_start_x = cell_width * col
         text_pos_x = cell_width * col + swatch_width + 7
 
-        ax.text(text_pos_x, y, name, fontsize=14,
+        ax.text(text_pos_x, y, name, fontsize=13,
                 horizontalalignment='left',
                 verticalalignment='center')
 
@@ -103,7 +103,7 @@ def plot_colors(path: str):
 def _colors():
     path = 'img/colors.png'
     plot_colortable(path)
-    return f'## Colors\n\n<p align="center"><img src="../{path}"></p>'
+    return f'## Colors\n\n<p align="center"><img src="/{path}"></p>'
 
 
 def plot_cmaps(path: str):
@@ -117,24 +117,30 @@ def plot_cmaps(path: str):
     for row in range(N_ROWS):
         for col in range(N_COLS):
             ax = axes[row, col]
-            cmap_id = colormap_names[idx]
-            mpl.colorbar.ColorbarBase(
-                ax, cmap=cmap_id, orientation='horizontal')
-            ax.set_title(cmap_id, fontsize=8)
-            ax.tick_params(left=False, right=False, labelleft=False,
-                           labelbottom=False, bottom=False)
+            if idx > len(colormap_names)-1:
+                ax.get_xaxis().set_visible(False)
+                ax.get_yaxis().set_visible(False)
+                for spine in ['top', 'right', 'left', 'bottom']:
+                    ax.spines[spine].set_visible(False)
+            else:
+                cmap_id = colormap_names[idx]
+                mpl.colorbar.ColorbarBase(
+                    ax, cmap=cmap_id, orientation='horizontal')
+                ax.set_title(cmap_id, fontsize=9)
+                ax.tick_params(left=False, right=False, labelleft=False,
+                            labelbottom=False, bottom=False)
 
-            if idx >= len(colormap_names) - 1:
-                plt.tight_layout()
-                plt.savefig(path)
-                return
+                if idx >= len(colormap_names) - 1:
+                    plt.tight_layout()
             idx += 1
+
+    plt.savefig(path)
 
 
 def colormaps():
     path = 'img/colormaps.png'
     plot_cmaps(path)
-    return f'## Colormaps\n\n<p align="center"><img src="../{path}"></p>'
+    return f'## Colormaps\n\n<p align="center"><img src="/{path}"></p>'
 
 
 def source():

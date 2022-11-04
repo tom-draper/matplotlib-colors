@@ -2,11 +2,11 @@
 
 ## Colors
 
-<p align="center"><img src="../img/colors.png"></p>
+<p align="center"><img src="/img/colors.png"></p>
 
 ## Colormaps
 
-<p align="center"><img src="../img/colormaps.png"></p>
+<p align="center"><img src="/img/colormaps.png"></p>
 
 ## Source
 
