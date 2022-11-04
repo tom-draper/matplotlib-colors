@@ -2,11 +2,11 @@
 
 ## Colors
 
-Colors ![Colors](../img/colors.png)
+![Colors](../img/colors.png)
 
 ## Colormaps
 
-Colormaps ![Colormaps](../img/colormaps.png)
+![Colormaps](../img/colormaps.png)
 
 ## Source
 
