@@ -2,11 +2,11 @@
 
 ## Colors
 
-Colors
+Colors ![Colors](../img/colors.png)
 
 ## Colormaps
 
-Colormaps ![Colormaps](img/colormaps.png?raw=true "Colormaps")
+Colormaps ![Colormaps](../img/colormaps.png)
 
 ## Source
 
