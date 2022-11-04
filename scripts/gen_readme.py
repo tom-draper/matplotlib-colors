@@ -109,7 +109,7 @@ def _colors():
 def plot_cmaps(path: str):
     N_COLS = 4
     N_ROWS = math.ceil(len(colormap_names) / N_COLS)
-    HEIGHT, WIDTH = 6, 10
+    HEIGHT, WIDTH = N_ROWS, 9
 
     _, axes = plt.subplots(N_ROWS, N_COLS, figsize=(WIDTH, HEIGHT))
 
