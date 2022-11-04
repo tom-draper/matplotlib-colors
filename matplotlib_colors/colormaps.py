@@ -4,14 +4,27 @@ from matplotlib_colors.colors import colors
 
 
 # Colors maps
-win_lose_draw = mcolors.ListedColormap([colors['PL_LOSE'], colors['PL_DRAW'], colors['PL_WIN']])
-premier_league = mcolors.ListedColormap([colors['PL_PINK'], colors['PL_BLUE'], colors['PL_GREEN']])
-team = mcolors.ListedColormap([colors['OPPOSITION'], colors['CONTESTED'], colors['TEAM']])
-analyst = mcolors.ListedColormap([colors['ANALYST_RED'], colors['ANALYST_WHITE'], colors['ANALYST_BLUE']])
-vibrant = mcolors.ListedColormap([colors['DUKE_BLUE'], colors['JAZZBERRY_JAM'], colors['RADICAL_RED'], colors['ORANGE_PANTONE'], colors['AMBER']])
-asteroid = mcolors.ListedColormap([colors['RICH_BLACK_FOGRA_29'], colors['BLUE_SAPPHIRE'], colors['VIRIDIAN_GREEN'], colors['MIDDLE_BLUE_GREEN'], colors['MEDIUM_CHAMPAGNE'], colors['GAMBOGE'], colors['ALLOY_ORANGE'], colors['RUST'], colors['RUFOUS'], colors['RUBY_RED']])
-steel = mcolors.ListedColormap([colors['RICH_BLACK_FOGRA_29'], colors['OXFORD_BLUE'], colors['BDAZZLED_BLUE'], colors['SHADOW_BLUE'], colors['PLATINUM']])
-vibrant2 = mcolors.ListedColormap([colors['FLICKR_PINK'], colors['PURPLE'], colors['TRYPAN_BLUE'], colors['ULTRAMARINE_BLUE'], colors['VIVID_SKY_BLUE']])
+win_lose_draw = mcolors.ListedColormap([
+    colors['pl_lose'], colors['pl_draw'], colors['pl_win']])
+premier_league = mcolors.ListedColormap([
+    colors['pl_pink'], colors['pl_blue'], colors['pl_green']])
+team = mcolors.ListedColormap([
+    colors['opposition'], colors['contested'], colors['team']])
+analyst = mcolors.ListedColormap([
+    colors['analyst_red'], colors['analyst_white'], colors['analyst_blue']])
+vibrant = mcolors.ListedColormap([
+    colors['duke_blue'], colors['jazzberry_jam'], colors['radical_red'], 
+    colors['orange_pantone'], colors['amber']])
+asteroid = mcolors.ListedColormap([
+    colors['rich_black_fogra_29'], colors['blue_sapphire'], colors['viridian_green'], 
+    colors['middle_blue_green'], colors['medium_champagne'], colors['gamboge'], 
+    colors['alloy_orange'], colors['rust'], colors['rufous'], colors['ruby_red']])
+steel = mcolors.ListedColormap([
+    colors['rich_black_fogra_29'], colors['oxford_blue'], colors['bdazzled_blue'], 
+    colors['shadow_blue'], colors['platinum']])
+vibrant2 = mcolors.ListedColormap([
+    colors['flickr_pink'], colors['purple'], colors['trypan_blue'], 
+    colors['ultramarine_blue'], colors['vivid_sky_blue']])
 
 
 excluded_vars = {'colormaps', 'colors', 'plt', 'mcolors', 'excluded_vars', 

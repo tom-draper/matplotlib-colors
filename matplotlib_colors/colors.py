@@ -58,7 +58,7 @@ TRYPAN_BLUE = [58, 12, 163]
 ULTRAMARINE_BLUE = [67, 97, 238]
 VIVID_SKY_BLUE = [76, 201, 240]
 
-colors = {var: list(map(lambda x: x/255, eval(var))) 
+colors = {var.lower(): list(map(lambda x: x/255, eval(var))) 
           for var in dir() 
           if not var.startswith('__')}
 
