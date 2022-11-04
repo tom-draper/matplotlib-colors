@@ -31,10 +31,10 @@ def plot_colors(path: str):
             
 def colors():
     path = 'img/colors.png'
-    return f'## Colors\n\nColors Colormaps ![Colormaps]({path}?raw=true "Colormaps")'
+    return f'## Colors\n\nColors ![Colors](../{path})'
 
 def plot_cmaps(path: str):
-    N_ROWS, N_COLS = 8, 4 # 13, 13 <-- for all in one figure 
+    N_ROWS, N_COLS = 2, 4 # 13, 13 <-- for all in one figure 
     HEIGHT, WIDTH = 9, 16
             
     _, axes = plt.subplots(N_ROWS, N_COLS, figsize=(WIDTH, HEIGHT))
@@ -58,7 +58,7 @@ def plot_cmaps(path: str):
 def colormaps():
     path = 'img/colormaps.png'
     plot_cmaps(path)
-    return f'## Colormaps\n\nColormaps ![Colormaps]({path}?raw=true "Colormaps")'
+    return f'## Colormaps\n\nColormaps ![Colormaps](../{path})'
 
 
 
