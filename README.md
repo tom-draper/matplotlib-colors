@@ -12,6 +12,10 @@ A collection of curated colors and colormaps for matplotlib.
 python3 -m pip install matplotlib-colors
 ```
 
+## Demo
+
+[All colors and colormaps](matplotlib_colors/README.md)
+
 ## Examples
 
 ### Colormaps
@@ -53,8 +57,6 @@ The full list of colormap names can be found by importing the `colormap_names` l
 from matplotlib_colors import colormap_names
 ```
 
-[All colormaps](matplotlib_colors/README.md)
-
 ### Colors
 
 The package includes a large selection of colors that can be accessed directly by importing `colors` and specifying a color name.
@@ -75,7 +77,4 @@ The full list of color names can be found by importing the `color_names` list.
 ```py
 from matplotlib_colors import color_names
 ```
-
-[All colors](matplotlib_colors/README.md)
-
 
