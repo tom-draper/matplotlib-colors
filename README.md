@@ -22,7 +22,7 @@ New colormaps can be added to matplotlib by calling the `register_cmaps` functio
 from matplotlib_colors import register_cmaps
 register_cmaps()  # Adds new colormaps to matplotlib
 
-# Build your data viz as normal with matplotlib...
+# Build your data viz as normal with matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
 
