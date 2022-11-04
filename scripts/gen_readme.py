@@ -103,7 +103,7 @@ def plot_colors(path: str):
 def _colors():
     path = 'img/colors.png'
     plot_colortable(path)
-    return f'## Colors\n\n![Colors](../{path})'
+    return f'## Colors\n\n<p align="center"><img src="../{path}"></p>'
 
 
 def plot_cmaps(path: str):
@@ -134,7 +134,7 @@ def plot_cmaps(path: str):
 def colormaps():
     path = 'img/colormaps.png'
     plot_cmaps(path)
-    return f'## Colormaps\n\n![Colormaps](../{path})'
+    return f'## Colormaps\n\n<p align="center"><img src="../{path}"></p>'
 
 
 def source():
