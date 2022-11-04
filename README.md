@@ -53,6 +53,8 @@ The full list of colormap names can be found by importing the `colormap_names` l
 from matplotlib_colors import colormap_names
 ```
 
+[Colourmap showcase](matplotlib_colors/README.md)
+
 ### Colors
 
 The package includes a large selection of colors that can be accessed directly by importing `colors` and specifying a color name.
@@ -73,4 +75,7 @@ The full list of color names can be found by importing the `color_names` list.
 ```py
 from matplotlib_colors import color_names
 ```
+
+[Color showcase](matplotlib_colors/README.md)
+
 
