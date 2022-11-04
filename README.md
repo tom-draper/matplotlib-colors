@@ -20,7 +20,7 @@ python3 -m pip install matplotlib-colors
 
 ### Colormaps
 
-New colormaps can be added to matplotlib by calling the `register_cmaps` function. Then the desired colormap can be specified by name as the `cmap` argument.
+Call the `register_cmaps` function to add the new colormaps to matplotlib. Then the desired colormap can be specified by name as the `cmap` argument.
 
 ```py
 from matplotlib_colors import register_cmaps
