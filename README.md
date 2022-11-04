@@ -3,7 +3,7 @@
 A collection of curated colors and colormaps for matplotlib.
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/41476809/200024756-62607975-2a2f-4e68-92fc-415bcacf7e2f.png">
+	<img src="https://user-images.githubusercontent.com/41476809/200025127-1d4367cd-4ace-44fd-8a50-8af938b828f8.png">
 </p>
 
 ## Installation
