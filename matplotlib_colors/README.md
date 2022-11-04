@@ -2,11 +2,11 @@
 
 ## Colors
 
-![Colors](../img/colors.png)
+<p align="center"><img src="../img/colors.png"></p>
 
 ## Colormaps
 
-![Colormaps](../img/colormaps.png)
+<p align="center"><img src="../img/colormaps.png"></p>
 
 ## Source
 
