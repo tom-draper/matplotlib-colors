@@ -1,14 +1,41 @@
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from matplotlib_colors import register_cmaps, colormap_names
 
+register_cmaps()
 
 def title():
-    return """# Showcase\n\n"""
+    return """# Showcase"""
 
 def colors():
     return """## Colors\n\nColors"""
 
+def plot_cmaps(path: str):
+    N_ROWS, N_COLS = 8, 4 # 13, 13 <-- for all in one figure 
+    HEIGHT, WIDTH = 9, 16
+            
+    _, axes = plt.subplots(N_ROWS, N_COLS, figsize=(WIDTH, HEIGHT))
+    
+    idx = 0
+    for row in range(N_ROWS):
+        for col in range(N_COLS):
+            ax = axes[row, col]
+            cmap_id = colormap_names[idx]
+            mpl.colorbar.ColorbarBase(ax, cmap=cmap_id, orientation='horizontal')
+            ax.set_title(cmap_id, fontsize=8)
+            ax.tick_params(left=False, right=False, labelleft=False, 
+                           labelbottom=False, bottom=False)
+            
+            if idx >= len(colormap_names) - 1:
+                plt.tight_layout()
+                plt.savefig(path)
+                return
+            idx += 1
 
 def colormaps():
-    return """## Colormaps\n\nColormaps"""
+    path = 'img/colormaps.png'
+    plot_cmaps(path)
+    return f'## Colormaps\n\nColormaps ![Colormaps]({path}?raw=true "Colormaps")'
 
 
 def source():
