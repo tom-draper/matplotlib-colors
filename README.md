@@ -9,7 +9,7 @@ A collection of curated colors and colormaps for matplotlib.
 ## Installation
 
 ```bash
-python3 -m pip install matplotlib-colors
+pip install matplotlib-colors
 ```
 
 ## Demo
