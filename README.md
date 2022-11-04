@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 y = [x * x for x in x]
-plt.scatter(x, y, c=range(12), cmap='analyst')  # Specify a new color name from matplotlib_colors
+plt.scatter(x, y, c=range(12), cmap='analyst')  # Specify one of the new colormap names
 plt.colorbar()
 plt.show()
 ```
