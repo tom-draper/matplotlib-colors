@@ -67,7 +67,7 @@ from matplotlib_colors import colors
 
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 y = [x * x for x in x]
-plt.scatter(x, y, c=colors['PL_RED'])  # All points colored with PL_RED
+plt.scatter(x, y, c=colors['pl_red'])  # All points colored with PL_RED
 plt.colorbar()
 plt.show()
 ```
