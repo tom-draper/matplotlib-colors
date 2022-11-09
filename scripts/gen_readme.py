@@ -1,10 +1,17 @@
+import sys
+import os
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.insert(0, parent + '/matplotlib_colors')
+from colors import colors, color_names
+from colormaps import register_cmaps, colormap_names
+
 import math
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 from matplotlib.patches import Rectangle
 import matplotlib.patches as mpatch
-from matplotlib_colors import register_cmaps, colormap_names, colors, color_names
 
 register_cmaps()
 
@@ -58,8 +65,9 @@ def plot_colortable(path, sort_colors=True, emptycols=0):
             Rectangle(xy=(swatch_start_x, y-9), width=swatch_width,
                       height=18, facecolor=colors[name], edgecolor='0.7')
         )
-        
-    plt.savefig(path)
+    
+    if path is not None:
+        plt.savefig(path)
 
 def plot_colors(path: str):
     fig = plt.figure(figsize=(9, 5))
@@ -97,13 +105,14 @@ def plot_colors(path: str):
     ax.set_ylim(n_rows, -1)
     ax.axis('off')
 
-    plt.savefig(path)
+    if path is not None:
+        plt.savefig(path)
 
 
 def _colors():
     path = 'img/colors.png'
     plot_colortable(path)
-    return f'## Colors\n\n<p align="center"><img src="/{path}"></p>'
+    return f'## Colors\n\n<p align="center"><img src="../{path}"></p>'
 
 
 def plot_cmaps(path: str):
@@ -134,13 +143,14 @@ def plot_cmaps(path: str):
                     plt.tight_layout()
             idx += 1
 
-    plt.savefig(path)
+    if path is not None:
+        plt.savefig(path)
 
 
 def colormaps():
     path = 'img/colormaps.png'
     plot_cmaps(path)
-    return f'## Colormaps\n\n<p align="center"><img src="/{path}"></p>'
+    return f'## Colormaps\n\n<p align="center"><img src="../{path}"></p>'
 
 
 def source():

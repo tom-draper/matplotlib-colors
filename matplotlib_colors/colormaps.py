@@ -10,6 +10,10 @@ premier_league = mcolors.ListedColormap([
     colors['pl_pink'], colors['pl_blue'], colors['pl_green']])
 team = mcolors.ListedColormap([
     colors['opposition'], colors['contested'], colors['team']])
+damp = mcolors.ListedColormap([
+    colors['red_violet'], colors['oct_sky'], colors['merky_green']])
+selected = mcolors.ListedColormap([
+    colors['selected_orange'], colors['selected_green']])
 analyst = mcolors.ListedColormap([
     colors['analyst_red'], colors['analyst_white'], colors['analyst_blue']])
 vibrant = mcolors.ListedColormap([
@@ -48,14 +52,14 @@ orange_purple = mcolors.ListedColormap(
     [colors['safety_orange_blaze_orange'], colors['safety_orange'], colors['orange'],
      colors['yellow_orange_color_wheel'], colors['orange_peel'], colors['russian_violet'],
      colors['persian_indigo'], colors['purple'], colors['french_violet'], colors['amethyst']])
-space_cadet = mcolors.ListedColormap(
+go_kart = mcolors.ListedColormap(
     [colors['space_cadet'], colors['manatee'], colors['cultured'],
      colors['imperial_red'], colors['crimson']])
 astro = mcolors.ListedColormap(
     [colors['flickr_pink'], colors['byzantine'], colors['purple'], colors['purple_2'], 
      colors['trypan_blue'], colors['trypan_blue_2'], colors['persian_blue'], 
      colors['ultramarine_blue'], colors['dodger_blue'], colors['vivid_sky_blue']])
-skin = mcolors.ListedColormap(
+human = mcolors.ListedColormap(
     [colors['antique_white'], colors['peach_puff'], colors['gold_crayola'],
      colors['tan_crayola'], colors['camel'], colors['cafe_au_lait'],
      colors['coyote_brown'], colors['sepia'], colors['pullman_brown_ups_brown'],

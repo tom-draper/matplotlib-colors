@@ -167,6 +167,13 @@ cg_blue = [26, 117, 159]
 lapis_lazuli = [30, 96, 145]
 yale_blue = [24, 78, 119]
 
+# Other
+merky_green = [106, 123, 106]
+oct_sky = [248, 197, 191]
+red_violet = [112, 72, 82]
+
+selected_orange = [223, 145, 55]
+selected_green = [92, 189, 83]
 
 colors = {var: list(map(lambda x: x/255, eval(var))) 
           for var in dir() 
