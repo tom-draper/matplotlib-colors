@@ -40,9 +40,9 @@ plt.show()
 Alternatively, all new colormap objects can be accessed directly by importing the `colormaps` dict and specifying a colormap by name.
 
 ```py
+from matplotlib_colors import colormaps
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib_colors import colormaps
 
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 y = [x * x for x in x]
@@ -62,12 +62,12 @@ from matplotlib_colors import colormap_names
 The package includes a large selection of colors that can be accessed directly by importing `colors` and specifying a color name.
 
 ```py
-import matplotlib.pyplot as plt
 from matplotlib_colors import colors
+import matplotlib.pyplot as plt
 
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 y = [x * x for x in x]
-plt.scatter(x, y, c=colors['PL_RED'])  # All points colored with PL_RED
+plt.scatter(x, y, c=colors['pl_red'])  # All points colored with PL_RED
 plt.colorbar()
 plt.show()
 ```
